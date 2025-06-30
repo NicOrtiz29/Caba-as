@@ -1,6 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { Wand2, LoaderCircle } from 'lucide-react';
 import { getItinerary } from '@/app/actions';
 import { Button } from '@/components/ui/button';
@@ -30,7 +31,7 @@ function SubmitButton() {
 
 export default function ItineraryGenerator() {
   const initialState = { itinerary: undefined, error: undefined };
-  const [state, formAction] = useFormState(getItinerary, initialState);
+  const [state, formAction] = useActionState(getItinerary, initialState);
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {

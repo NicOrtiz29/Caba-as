@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative h-[60vh] min-h-[400px] w-full text-white sm:h-[80vh] sm:min-h-[600px]">
       <div className="absolute inset-0 bg-black/50 z-10" />
       <Image
-        src="https://placehold.co/1920x1080"
+        src="/images/portada.jpg"
         alt="Paisaje de la Patagonia con montañas y un lago"
         data-ai-hint="patagonia landscape"
         fill

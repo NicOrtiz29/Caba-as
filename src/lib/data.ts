@@ -15,9 +15,9 @@ export const cabins = [
       { icon: Snowflake, text: 'Calefacción Central' },
     ] as Amenity[],
     images: [
-      { src: 'https://placehold.co/800x600/4B0082/F0F0F8', alt: 'Vista exterior de la Cabaña del Bosque', hint: 'cabin forest' },
-      { src: 'https://placehold.co/800x600/F0F0F8/4B0082', alt: 'Interior de la Cabaña del Bosque', hint: 'cozy interior' },
-      { src: 'https://placehold.co/800x600/B22222/FFFFFF', alt: 'Balcón con vista al bosque', hint: 'forest view' },
+      { src: '/images/cabaña1.jpg', alt: 'Vista exterior de la Cabaña del Bosque', hint: 'cabin forest' },
+      { src: '/images/cabaña1.jpg', alt: 'Interior de la Cabaña del Bosque', hint: 'cozy interior' },
+      { src: '/images/cabaña1.jpg', alt: 'Balcón con vista al bosque', hint: 'forest view' },
     ],
   },
   {
@@ -32,9 +32,9 @@ export const cabins = [
       { icon: Snowflake, text: 'Hogar a Leña' },
     ] as Amenity[],
     images: [
-      { src: 'https://placehold.co/800x600/4B0082/F0F0F8', alt: 'Vista de la Cabaña del Lago desde el agua', hint: 'lake cabin' },
-      { src: 'https://placehold.co/800x600/F0F0F8/4B0082', alt: 'Sala de estar con vista al lago', hint: 'lake view' },
-      { src: 'https://placehold.co/800x600/B22222/FFFFFF', alt: 'Dormitorio principal de la cabaña', hint: 'bedroom view' },
+      { src: '/images/cabaña1.jpg', alt: 'Vista de la Cabaña del Lago desde el agua', hint: 'lake cabin' },
+      { src: '/images/cabaña1.jpg', alt: 'Sala de estar con vista al lago', hint: 'lake view' },
+      { src: '/images/cabaña1.jpg', alt: 'Dormitorio principal de la cabaña', hint: 'bedroom view' },
     ],
   },
   {
@@ -49,9 +49,9 @@ export const cabins = [
       { icon: Snowflake, text: 'Guarda esquís' },
     ] as Amenity[],
     images: [
-      { src: 'https://placehold.co/800x600/4B0082/F0F0F8', alt: 'Cabaña de la Montaña con picos nevados al fondo', hint: 'mountain cabin' },
-      { src: 'https://placehold.co/800x600/F0F0F8/4B0082', alt: 'Interior rústico y moderno de la cabaña', hint: 'rustic interior' },
-      { src: 'https://placehold.co/800x600/B22222/FFFFFF', alt: 'Vista desde la terraza de la cabaña', hint: 'mountain vista' },
+      { src: '/images/cabaña1.jpg', alt: 'Cabaña de la Montaña con picos nevados al fondo', hint: 'mountain cabin' },
+      { src: '/images/cabaña1.jpg', alt: 'Interior rústico y moderno de la cabaña', hint: 'rustic interior' },
+      { src: '/images/cabaña1.jpg', alt: 'Vista desde la terraza de la cabaña', hint: 'mountain vista' },
     ],
   },
   {
@@ -66,9 +66,9 @@ export const cabins = [
       { icon: Snowflake, text: 'Calefacción a gas' },
     ] as Amenity[],
     images: [
-      { src: 'https://placehold.co/800x600/4B0082/F0F0F8', alt: 'Entrada a la Cabaña Los Arrayanes', hint: 'forest entrance' },
-      { src: 'https://placehold.co/800x600/F0F0F8/4B0082', alt: 'Dormitorio acogedor con detalles en madera', hint: 'wood bedroom' },
-      { src: 'https://placehold.co/800x600/B22222/FFFFFF', alt: 'Patio privado en medio del bosque', hint: 'private patio' },
+      { src: '/images/cabaña1.jpg', alt: 'Entrada a la Cabaña Los Arrayanes', hint: 'forest entrance' },
+      { src: '/images/cabaña1.jpg', alt: 'Dormitorio acogedor con detalles en madera', hint: 'wood bedroom' },
+      { src: '/images/cabaña1.jpg', alt: 'Patio privado en medio del bosque', hint: 'private patio' },
     ],
   }
 ];

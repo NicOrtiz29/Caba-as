@@ -1,8 +1,15 @@
-import Image from 'next/image';
-import { MapPin } from 'lucide-react';
+'use client';
+
 import { Card, CardContent } from '@/components/ui/card';
 
 export default function MapSection() {
+  const lat = -40.275949;
+  const lon = -71.388911;
+
+  // This URL is for embedding an interactive Google Map.
+  // It uses the specific coordinates for the cabins for better accuracy.
+  const googleMapEmbedUrl = `https://maps.google.com/maps?q=${lat},${lon}&hl=es&z=16&output=embed`;
+
   return (
     <section id="location" className="py-16 sm:py-24 bg-secondary/50">
       <div className="container">
@@ -15,25 +22,18 @@ export default function MapSection() {
           </p>
         </div>
         <Card className="overflow-hidden shadow-xl">
-          <CardContent className="p-2">
-            <div className="aspect-video relative w-full">
-              <Image
-                src="https://placehold.co/1200x600"
-                alt="Mapa mostrando la ubicación de las cabañas en San Martín de los Andes"
-                data-ai-hint="map Andes"
-                fill
-                className="object-cover rounded-md"
-              />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <MapPin className="h-12 w-12 text-accent drop-shadow-lg" fill="currentColor" />
-                 <div className="absolute -top-2 -right-2 w-4 h-4 bg-accent rounded-full animate-ping"></div>
-              </div>
-            </div>
+          <CardContent className="p-0 md:p-2">
+            <iframe
+              title="Mapa de ubicación de las cabañas"
+              src={googleMapEmbedUrl}
+              className="w-full aspect-video rounded-md"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </CardContent>
         </Card>
-         <div className="text-center mt-6 text-sm text-muted-foreground">
-            <p>Mapa interactivo próximamente.</p>
-          </div>
       </div>
     </section>
   );
