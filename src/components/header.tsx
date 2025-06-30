@@ -29,7 +29,7 @@ export default function Header() {
   const NavLink = ({ href, label }: { href: string; label: string }) => (
     <Link
       href={href}
-      className="text-sm font-medium transition-colors hover:text-primary"
+      className="text-sm font-medium transition-colors hover:text-primary text-black drop-shadow-[0_2px_6px_white]"
       onClick={() => setMobileMenuOpen(false)}
     >
       {label}
@@ -39,14 +39,14 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "border-b bg-background/80 backdrop-blur-sm" : "bg-transparent"
+        "sticky top-0 z-50 w-full transition-all duration-300 bg-header",
+        isScrolled ? "border-b bg-header/90 backdrop-blur-sm" : "bg-header"
       )}
     >
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
-          <MountainSnow className="h-6 w-6 text-primary" />
-          <span className="hidden font-headline text-lg font-bold sm:inline-block">
+          <MountainSnow className="h-6 w-6 text-white" />
+          <span className="hidden sm:inline-block font-headline text-lg font-bold uppercase tracking-widest text-black drop-shadow-[0_2px_6px_white]">
             Entreñires cabañas de montaña
           </span>
         </Link>
@@ -56,7 +56,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="ml-auto flex items-center gap-4">
-          <Button asChild className="hidden md:flex" variant="outline">
+          <Button asChild className="hidden md:flex text-black drop-shadow-[0_2px_6px_white]" variant="outline">
             <Link href="#booking">Contactar</Link>
           </Button>
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -69,15 +69,15 @@ export default function Header() {
             <SheetContent side="left">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                  <MountainSnow className="h-6 w-6 text-primary" />
-                  <span className="font-headline text-lg font-bold">Entreñires cabañas de montaña</span>
+                  <MountainSnow className="h-6 w-6 text-white" />
+                  <span className="font-headline text-lg font-bold uppercase tracking-widest text-black drop-shadow-[0_2px_6px_white]">Entreñires cabañas de montaña</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {NAV_LINKS.map((link) => (
                     <NavLink key={link.href} {...link} />
                   ))}
                 </nav>
-                <Button asChild>
+                <Button asChild className="text-black drop-shadow-[0_2px_6px_white]">
                    <Link href="#booking" onClick={() => setMobileMenuOpen(false)}>Contactar</Link>
                 </Button>
               </div>
