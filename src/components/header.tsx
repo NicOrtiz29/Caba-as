@@ -47,7 +47,7 @@ export default function Header() {
         <Link href="/" className="mr-6 flex items-center gap-2">
           <MountainSnow className="h-6 w-6 text-primary" />
           <span className="hidden font-headline text-lg font-bold sm:inline-block">
-            SMA Cabins
+            Refugio Trébol de Montaña
           </span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -70,7 +70,7 @@ export default function Header() {
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
                   <MountainSnow className="h-6 w-6 text-primary" />
-                  <span className="font-headline text-lg font-bold">SMA Cabins</span>
+                  <span className="font-headline text-lg font-bold">Refugio Trébol de Montaña</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {NAV_LINKS.map((link) => (

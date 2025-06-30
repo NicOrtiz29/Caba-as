@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster"
 import WhatsAppButton from '@/components/whatsapp-button';
 
 export const metadata: Metadata = {
-  title: 'SMA Cabins',
-  description: 'Alquiler de cabañas en San Martin de los Andes.',
+  title: 'Refugio Trébol de Montaña',
+  description: 'Alquiler de cabañas en San Martín de los Andes.',
 };
 
 export default function RootLayout({
