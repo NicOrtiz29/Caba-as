@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster"
 import WhatsAppButton from '@/components/whatsapp-button';
 
 export const metadata: Metadata = {
-  title: 'Refugio Trébol de Montaña',
+  title: 'Entreñires cabañas de montaña',
   description: 'Alquiler de cabañas en San Martín de los Andes.',
 };
 
