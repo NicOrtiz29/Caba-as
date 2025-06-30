@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <MountainSnow className="h-6 w-6 text-primary" />
-              <span className="font-headline text-lg font-bold">SMA Cabins</span>
+              <span className="font-headline text-lg font-bold">Entreñires cabañas de montaña</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Tu hogar en San Martín de los Andes.
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} SMA Cabins. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Entreñires cabañas de montaña. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

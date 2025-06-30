@@ -18,7 +18,7 @@ export default function Testimonials() {
             Lo que dicen nuestros huéspedes
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Descubre por qué nuestros visitantes eligen SMA Cabins una y otra vez.
+            Descubre por qué nuestros visitantes eligen Entreñires cabañas de montaña una y otra vez.
           </p>
         </div>
 

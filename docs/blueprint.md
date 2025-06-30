@@ -1,4 +1,4 @@
-# **App Name**: SMA Cabins
+# **App Name**: Entreñires cabañas de montaña
 
 ## Core Features:
 
